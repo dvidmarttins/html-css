@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */
+            background-color: lightgray;
+
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;*/
+
+            /* AO INVÉS DE FAZER COMO ACIMA, DA PRA SER FEITO O SHORTHAND ABAIXO */
+
+            border: 10px solid darkslategray;
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            /* AO INVÉS DE FAZER COMO ACIMA, DA PRA SER FEITO O SHORTHAND ABAIXO */
+
+            /* padding: 10px 10px 20px 10px
+            USAR ESTE MODELO QUANDO TIVER 1 OU MAIS LADOS DIFERENTES */
+
+            /* padding: 10px 20px 
+            SIGNIFICA QUE CIMA E BAIXO SÃO 10px E QUE OS LADOS SÃO 20px*/
+
+            padding: 10px;
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+
+            /* AO INVÉS DE FAZER COMO ACIMA, DA PRA SER FEITO O SHORTHAND ABAIXO */
+
+            margin: 20px 20px 40px 20px;
+
+            /* CASO QUEIRA CENTRALIZAR OS LADOS USAR: auto
+            EX: margin: 20px auto 40px auto */
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;*/
+
+            /* AO INVÉS DE FAZER COMO ACIMA, DA PRA SER FEITO O SHORTHAND ABAIXO */
+
+            outline: 5px dashed red;
+        }
+
+        a { /* inline-level */
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
