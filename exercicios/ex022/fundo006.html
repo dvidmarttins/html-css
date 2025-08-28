@@ -7,11 +7,18 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: cover;
+            background-size: cover;*/ /* cover vai fazer com que a imagem preencha a tela */
+            /*background-attachment: fixed;*/ /* Trava a imagem para quando rolar o scroll não chegue ao final dela */
+
+            /* Shorthand - background 
+                color > image > position > [size - usar /] > repeat > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed;
         }
 
         main {
